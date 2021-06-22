@@ -1,0 +1,6 @@
+deps:
+  - rhoban/utils
+  - rhoban/random
+  - rhoban/gp
+  - rhoban/viewer
+

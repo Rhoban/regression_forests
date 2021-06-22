@@ -70,7 +70,7 @@ void Tree::fillProjection(std::vector<std::vector<Eigen::VectorXd>>& out, Node* 
     out.push_back(currentNode->project(freeDimensions, limits));
     return;
   }
-  double splitDim = currentNode->s.dim;
+  int splitDim = currentNode->s.dim;
   double splitVal = currentNode->s.val;
   double oldMin = limits(splitDim, 0);
   double oldMax = limits(splitDim, 1);
@@ -142,7 +142,7 @@ void Tree::addSubTree(Node* node, Eigen::MatrixXd& limits, const Tree& other, do
     delete (subTreeRoot);
     return;
   }
-  double sDim = node->s.dim;
+  int sDim = node->s.dim;
   double sVal = node->s.val;
   double oldMin = limits(sDim, 0);
   double oldMax = limits(sDim, 1);
