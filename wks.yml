@@ -1,6 +1,6 @@
 deps:
-  - rhoban/utils#wks
-  - rhoban/random#wks
-  - rhoban/gp#wks
-  - rhoban/viewer#wks
+  - rhoban/utils
+  - rhoban/random
+  - rhoban/gp
+  - rhoban/viewer
 
